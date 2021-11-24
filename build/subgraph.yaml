@@ -17,6 +17,12 @@ dataSources:
       abis:
         - name: Factory
           file: Factory/abis/Factory.json
+        - name: ERC20
+          file: Factory/abis/ERC20.json
+        - name: ERC20NameBytes
+          file: Factory/abis/ERC20NameBytes.json
+        - name: ERC20SymbolBytes
+          file: Factory/abis/ERC20SymbolBytes.json
       eventHandlers:
         - event: PairCreated(indexed address,indexed address,address,uint256)
           handler: handlePairCreated
